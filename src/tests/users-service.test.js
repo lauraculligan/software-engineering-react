@@ -123,7 +123,7 @@ describe('findAllUsers',  () => {
             email: `${username}@stooges.com`
           })
       )
-  )
+  );
 
   // clean up after ourselves
   afterAll(() =>
@@ -131,7 +131,7 @@ describe('findAllUsers',  () => {
       usernames.map(username =>
           deleteUsersByUsername(username)
       )
-  )
+  );
 
   test('can retrieve all users from REST API', async () => {
     // retrieve all the users
