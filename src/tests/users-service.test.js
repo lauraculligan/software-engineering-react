@@ -126,9 +126,9 @@ describe('findAllUsers',  () => {
   );
 
   // clean up after ourselves
-  afterAll(() =>
+  afterAll(async () =>
       // delete the users we inserted
-      usernames.map(username =>
+      await usernames.map(username =>
           deleteUsersByUsername(username)
       )
   );
