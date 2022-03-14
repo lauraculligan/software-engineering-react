@@ -7,8 +7,8 @@ import axios from "axios";
 jest.mock('axios');
 
 const MOCKED_USERS = [
-    {username: 'ellen_ripley', password: 'lv426', email: 'repley@weyland.com', _id: "123"},
-    {username: 'sarah_conor', password: 'illbeback', email: 'sarah@bigjeff.com', _id: "234"},
+    {username: 'ellen_ripley', password: 'lv426', email: 'repley@weyland.com'},
+    {username: 'sarah_conor', password: 'illbeback', email: 'sarah@bigjeff.com'},
 ]
 
 
