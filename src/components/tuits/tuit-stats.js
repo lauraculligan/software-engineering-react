@@ -24,6 +24,7 @@ const TuitStats = ({tuit, likeTuit = () => {}}) => {
             {tuit.stats && tuit.stats.likes}
           </span>
         </div>
+          <div className="col">
           <span onClick={() => likeTuit(tuit)}>
               {
                   tuit.stats && tuit.stats.likes && tuit.stats.likes > 0 &&
