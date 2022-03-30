@@ -91,7 +91,7 @@ const Profile = () => {
             <li className="nav-item">
               <Link to="/profile/dislikes"
                     className={`nav-link ${location.pathname.indexOf('dislikes') >= 0 ? 'active':''}`}>
-                Likes</Link>
+                DisLikes</Link>
             </li>
           </ul>
         </div>
@@ -104,6 +104,6 @@ const Profile = () => {
           <Route path="/dislikes" element={<MyDisLikes/>}/>
         </Routes>
     </div>
-  );
+  )
 }
 export default Profile;
