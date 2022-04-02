@@ -21,3 +21,7 @@ export const findAllUsersThatDisLikedTuit = (tid) =>
 export const userDisLikesTuit = (uid, tid) =>
     api.put(`${USERS_API}/${uid}/dislikes/${tid}`)
         .then(response => response.data);
+
+export  const userUnDisLikesTuit = (uid, tid) =>
+    api.delete(`${USERS_API}/${uid}/dislikes/${tid}`)
+    .then(response => response.data);

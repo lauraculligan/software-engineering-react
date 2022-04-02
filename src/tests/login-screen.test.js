@@ -85,7 +85,7 @@ describe('www', () => {
 
     await waitFor(() => {
       // const regex = new RegExp(link.expect.textOnScreen, "i");
-      const linkElement = screen.getByText(/bob/i);
+      const linkElement = screen.getByText(/laura/i);
       expect(linkElement).toBeInTheDocument();
     });
 
